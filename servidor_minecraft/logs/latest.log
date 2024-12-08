@@ -1,0 +1,69 @@
+2024-12-08 21:04:31,967 [32mINFO [m [m[main][m [mc.m.m.Launcher.main(76)[m: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 43.4.2, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853, nogui]
+2024-12-08 21:04:31,978 [32mINFO [m [m[main][m [mc.m.m.Launcher.<init>(51)[m: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.13 by Ubuntu; OS Linux arch amd64 version 6.5.0-1025-azure
+2024-12-08 21:04:32,198 [32mINFO [m [m[main][m [mmixin.info(97)[m: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/mipene123/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2382!/ Service=ModLauncher Env=SERVER
+2024-12-08 21:04:32,714 [32mINFO [m [m[main][m [mn.m.f.l.m.JarInJarDependencyLocator.scanMods(54)[m: No dependencies to load found. Skipping!
+2024-12-08 21:04:32,853 [1;31mERROR[m [m[main][m [mn.m.f.l.ModSorter.verifyDependencyVersions(213)[m: Missing or unsupported mandatory dependencies:
+	Mod ID: 'geckolib3', Requested by: 'pale_hound', Expected range: '[3.1.40,)', Actual version: '[MISSING]'
+2024-12-08 21:04:35,356 [32mINFO [m [m[main][m [mmixin.info(97)[m: Compatibility level set to JAVA_17
+2024-12-08 21:04:35,379 [32mINFO [m [m[main][m [mc.m.m.LaunchServiceHandler.launch(52)[m: Launching target 'forgeserver' with arguments [nogui]
+2024-12-08 21:04:44,291 [32mINFO [m [m[main][m [mn.m.u.d.DataFixers.m_14529_(272)[m: Building unoptimized datafixer
+2024-12-08 21:04:47,698 [1;31mFATAL[m [m[main][m [mn.m.f.ModLoader.gatherAndInitializeMods(149)[m: Error during pre-loading phase
+net.minecraftforge.fml.ModLoadingException: Mod §epale_hound§r requires §6geckolib3§r §o3.1.40 or above§r
+§7Currently, §6geckolib3§r§7 is §o§nnot installed
+	at net.minecraftforge.fml.ModLoadingException.lambda$fromEarlyException$0(ModLoadingException.java:50) ~[fmlcore-1.19.2-43.4.2.jar%23140!/:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.<init>(ModLoader.java:99) ~[fmlcore-1.19.2-43.4.2.jar%23140!/:?]
+	at net.minecraftforge.fml.ModLoader.get(ModLoader.java:131) ~[fmlcore-1.19.2-43.4.2.jar%23140!/:?]
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:32) ~[forge-1.19.2-43.4.2-universal.jar%23144!/:?]
+	at net.minecraft.server.Main.main(Main.java:141) ~[server-1.19.2-20220805.130853-srg.jar%23139!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$launchService$0(CommonServerLaunchHandler.java:29) ~[fmlloader-1.19.2-43.4.2.jar%23129!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?]
+	at com.mohistmc.MohistMCStart.main(MohistMCStart.java:96) [mohist.jar:1.19.2-141]
+2024-12-08 21:04:47,806 [1;31mFATAL[m [m[main][m [mn.m.s.l.ServerModLoader.dumpModLoadingCrashReport(76)[m: Crash report saved to ./crash-reports/crash-2024-12-08_21.04.47-fml.txt
+2024-12-08 21:04:47,821 [1;31mERROR[m [m[main][m [mn.m.s.Main.main(265)[m: Failed to start the minecraft server
+net.minecraftforge.fml.LoadingFailedException: Loading errors encountered: [
+	Mod §epale_hound§r requires §6geckolib3§r §o3.1.40 or above§r
+§7Currently, §6geckolib3§r§7 is §o§nnot installed
+]
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:152) ~[fmlcore-1.19.2-43.4.2.jar%23140!/:?]
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:32) ~[forge-1.19.2-43.4.2-universal.jar%23144!/:?]
+	at net.minecraft.server.Main.main(Main.java:141) ~[server-1.19.2-20220805.130853-srg.jar%23139!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$launchService$0(CommonServerLaunchHandler.java:29) ~[fmlloader-1.19.2-43.4.2.jar%23129!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%2372!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?]
+	at com.mohistmc.MohistMCStart.main(MohistMCStart.java:96) [mohist.jar:1.19.2-141]
