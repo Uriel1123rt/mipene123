@@ -1,69 +1,762 @@
-2024-12-08 21:04:31,967 [32mINFO [m [m[main][m [mc.m.m.Launcher.main(76)[m: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 43.4.2, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853, nogui]
-2024-12-08 21:04:31,978 [32mINFO [m [m[main][m [mc.m.m.Launcher.<init>(51)[m: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.13 by Ubuntu; OS Linux arch amd64 version 6.5.0-1025-azure
-2024-12-08 21:04:32,198 [32mINFO [m [m[main][m [mmixin.info(97)[m: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/mipene123/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2382!/ Service=ModLauncher Env=SERVER
-2024-12-08 21:04:32,714 [32mINFO [m [m[main][m [mn.m.f.l.m.JarInJarDependencyLocator.scanMods(54)[m: No dependencies to load found. Skipping!
-2024-12-08 21:04:32,853 [1;31mERROR[m [m[main][m [mn.m.f.l.ModSorter.verifyDependencyVersions(213)[m: Missing or unsupported mandatory dependencies:
-	Mod ID: 'geckolib3', Requested by: 'pale_hound', Expected range: '[3.1.40,)', Actual version: '[MISSING]'
-2024-12-08 21:04:35,356 [32mINFO [m [m[main][m [mmixin.info(97)[m: Compatibility level set to JAVA_17
-2024-12-08 21:04:35,379 [32mINFO [m [m[main][m [mc.m.m.LaunchServiceHandler.launch(52)[m: Launching target 'forgeserver' with arguments [nogui]
-2024-12-08 21:04:44,291 [32mINFO [m [m[main][m [mn.m.u.d.DataFixers.m_14529_(272)[m: Building unoptimized datafixer
-2024-12-08 21:04:47,698 [1;31mFATAL[m [m[main][m [mn.m.f.ModLoader.gatherAndInitializeMods(149)[m: Error during pre-loading phase
-net.minecraftforge.fml.ModLoadingException: Mod §epale_hound§r requires §6geckolib3§r §o3.1.40 or above§r
-§7Currently, §6geckolib3§r§7 is §o§nnot installed
-	at net.minecraftforge.fml.ModLoadingException.lambda$fromEarlyException$0(ModLoadingException.java:50) ~[fmlcore-1.19.2-43.4.2.jar%23140!/:?]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
-	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
-	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276) ~[?:?]
-	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
-	at net.minecraftforge.fml.ModLoader.<init>(ModLoader.java:99) ~[fmlcore-1.19.2-43.4.2.jar%23140!/:?]
-	at net.minecraftforge.fml.ModLoader.get(ModLoader.java:131) ~[fmlcore-1.19.2-43.4.2.jar%23140!/:?]
-	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:32) ~[forge-1.19.2-43.4.2-universal.jar%23144!/:?]
-	at net.minecraft.server.Main.main(Main.java:141) ~[server-1.19.2-20220805.130853-srg.jar%23139!/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$launchService$0(CommonServerLaunchHandler.java:29) ~[fmlloader-1.19.2-43.4.2.jar%23129!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?]
-	at com.mohistmc.MohistMCStart.main(MohistMCStart.java:96) [mohist.jar:1.19.2-141]
-2024-12-08 21:04:47,806 [1;31mFATAL[m [m[main][m [mn.m.s.l.ServerModLoader.dumpModLoadingCrashReport(76)[m: Crash report saved to ./crash-reports/crash-2024-12-08_21.04.47-fml.txt
-2024-12-08 21:04:47,821 [1;31mERROR[m [m[main][m [mn.m.s.Main.main(265)[m: Failed to start the minecraft server
-net.minecraftforge.fml.LoadingFailedException: Loading errors encountered: [
-	Mod §epale_hound§r requires §6geckolib3§r §o3.1.40 or above§r
-§7Currently, §6geckolib3§r§7 is §o§nnot installed
-]
-	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:152) ~[fmlcore-1.19.2-43.4.2.jar%23140!/:?]
-	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:32) ~[forge-1.19.2-43.4.2-universal.jar%23144!/:?]
-	at net.minecraft.server.Main.main(Main.java:141) ~[server-1.19.2-20220805.130853-srg.jar%23139!/:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$launchService$0(CommonServerLaunchHandler.java:29) ~[fmlloader-1.19.2-43.4.2.jar%23129!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%2372!/:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?]
-	at com.mohistmc.MohistMCStart.main(MohistMCStart.java:96) [mohist.jar:1.19.2-141]
+2024-12-08 21:20:51,738 [32mINFO [m [m[main][m [mc.m.m.Launcher.main(76)[m: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 43.4.2, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853, nogui]
+2024-12-08 21:20:51,744 [32mINFO [m [m[main][m [mc.m.m.Launcher.<init>(51)[m: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.13 by Ubuntu; OS Linux arch amd64 version 6.5.0-1025-azure
+2024-12-08 21:20:52,054 [32mINFO [m [m[main][m [mmixin.info(97)[m: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/mipene123/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2382!/ Service=ModLauncher Env=SERVER
+2024-12-08 21:20:52,755 [32mINFO [m [m[main][m [mn.m.f.l.m.JarInJarDependencyLocator.scanMods(54)[m: No dependencies to load found. Skipping!
+2024-12-08 21:20:55,999 [32mINFO [m [m[main][m [mmixin.info(97)[m: Compatibility level set to JAVA_17
+2024-12-08 21:20:56,091 [32mINFO [m [m[main][m [mc.m.m.LaunchServiceHandler.launch(52)[m: Launching target 'forgeserver' with arguments [nogui]
+2024-12-08 21:21:05,540 [32mINFO [m [m[main][m [mn.m.u.d.DataFixers.m_14529_(272)[m: Building unoptimized datafixer
+2024-12-08 21:21:09,779 [32mINFO [m [m[modloading-worker-0][m [mn.m.c.ForgeMod.<init>(428)[m: Forge mod loading, version 43.4.2, for MC 1.19.2 with MCP 20220805.130853
+2024-12-08 21:21:09,790 [32mINFO [m [m[modloading-worker-0][m [mn.m.c.MinecraftForge.initialize(49)[m: MinecraftForge v43.4.2 Initialized
+2024-12-08 21:21:10,118 [32mINFO [m [m[modloading-worker-0][m [mc.m.MohistMC.init(39)[m: EventDispatcherRegistry initialized
+2024-12-08 21:21:11,213 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file /workspaces/mipene123/servidor_minecraft/config/SirenHead.toml is not correct. Correcting
+2024-12-08 21:21:11,217 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key General was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:11,218 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key General.Break leaves was corrected from null to its default, true. 
+2024-12-08 21:21:11,219 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key General.Destroy Blocks wwith melee was corrected from null to its default, true. 
+2024-12-08 21:21:11,224 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file /workspaces/mipene123/servidor_minecraft/config/man.toml is not correct. Correcting
+2024-12-08 21:21:11,225 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:11,226 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.enable_spawning was corrected from null to its default, true. 
+2024-12-08 21:21:11,227 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.min_spawn_rate was corrected from null to its default, 10000.0. 
+2024-12-08 21:21:11,228 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.max_spawn_rate was corrected from null to its default, 20000.0. 
+2024-12-08 21:21:11,229 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.jumpscare was corrected from null to its default, true. 
+2024-12-08 21:21:11,230 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.min_chase_duration was corrected from null to its default, 400.0. 
+2024-12-08 21:21:11,230 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.max_chase_duration was corrected from null to its default, 1000.0. 
+2024-12-08 21:21:11,231 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.climbing was corrected from null to its default, true. 
+2024-12-08 21:21:11,232 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.vanish_distance was corrected from null to its default, 30.0. 
+2024-12-08 21:21:11,233 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.spawn_at_day was corrected from null to its default, false. 
+2024-12-08 21:21:11,234 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.darkness_effect was corrected from null to its default, true. 
+2024-12-08 21:21:11,235 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.darkness_effect_duration was corrected from null to its default, 150.0. 
+2024-12-08 21:21:11,236 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.all_dimensions was corrected from null to its default, false. 
+2024-12-08 21:21:11,237 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.break_blocks was corrected from null to its default, true. 
+2024-12-08 21:21:11,237 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.lightnings was corrected from null to its default, true. 
+2024-12-08 21:21:11,238 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.spawn_sounds was corrected from null to its default, true. 
+2024-12-08 21:21:11,238 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.stage1_spawn_rate was corrected from null to its default, 600.0. 
+2024-12-08 21:21:11,239 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.stage2_spawn_rate was corrected from null to its default, 900.0. 
+2024-12-08 21:21:11,240 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.old_stalk_mechanic was corrected from null to its default, false. 
+2024-12-08 21:21:11,240 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Server and Client.legacy_man was corrected from null to its default, false. 
+2024-12-08 21:21:11,243 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Client was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:11,244 [33mWARN [m [m[main][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Client.shader was corrected from null to its default, true. 
+2024-12-08 21:21:11,253 [32mINFO [m [m[modloading-worker-0][m [ms.l.w.Init.onCommonSetup(17)[m: From The Fog Loaded Successfully!
+2024-12-08 21:21:14,032 [32mINFO [m [m[main][m [mc.m.a.y.YggdrasilAuthenticationService.<init>(74)[m: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+2024-12-08 21:21:15,460 [33mWARN [m [m[main][m [mn.m.s.p.VanillaPackResources.m_182299_(58)[m: Assets URL 'union:/workspaces/mipene123/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23171!/assets/.mcassetsroot' uses unexpected schema
+2024-12-08 21:21:15,460 [33mWARN [m [m[main][m [mn.m.s.p.VanillaPackResources.m_182299_(58)[m: Assets URL 'union:/workspaces/mipene123/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23171!/data/.mcassetsroot' uses unexpected schema
+2024-12-08 21:21:20,549 [32mINFO [m [m[main][m [mn.m.w.i.c.RecipeManager.m_5787_(97)[m: Loaded 7 recipes
+2024-12-08 21:21:21,194 [1;31mERROR[m [m[main][m [mn.m.s.ServerFunctionLibrary.m_179951_(102)[m: Failed to load function watching:check
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command, see below for error at position 0: <--[HERE]
+	at net.minecraft.commands.CommandFunction.m_77984_(CommandFunction.java:63) ~[server-1.19.2-20220805.130853-srg.jar%23171!/:?]
+	at net.minecraft.server.ServerFunctionLibrary.m_214320_(ServerFunctionLibrary.java:85) ~[server-1.19.2-20220805.130853-srg.jar%23171!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 6 more
+2024-12-08 21:21:21,395 [1;31mERROR[m [m[main][m [mn.m.s.ServerAdvancementManager.m_136037_(55)[m: Parsing error loading custom advancement man:thetear: Non [a-z0-9/._-] character in path of location: man:tearoftheman
+
+2024-12-08 21:21:21,498 [32mINFO [m [m[main][m [mn.m.a.AdvancementList.m_139333_(94)[m: Loaded 1290 advancements
+2024-12-08 21:21:22,406 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(128)[m: Starting minecraft server version 1.19.2
+2024-12-08 21:21:22,408 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(133)[m: Loading properties
+2024-12-08 21:21:22,409 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(149)[m: Default game type: SURVIVAL
+2024-12-08 21:21:22,410 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129793_(1298)[m: Generating keypair
+2024-12-08 21:21:22,640 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(160)[m: Starting Minecraft server on *:25565
+2024-12-08 21:21:22,701 [32mINFO [m [m[Server thread][m [mn.m.s.n.ServerConnectionListener.m_9711_(83)[m: Using default channel type
+2024-12-08 21:21:22,910 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(172)[m: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2024-12-08 21:21:22,912 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(173)[m: The server will make no attempt to authenticate usernames. Beware.
+2024-12-08 21:21:22,912 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(174)[m: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2024-12-08 21:21:22,913 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(175)[m: To change this, set "online-mode" to "true" in the server.properties file.
+2024-12-08 21:21:23,158 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: This server is running Mohist version 1.19.2-141 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT, Forge version 43.4.2)
+2024-12-08 21:21:24,100 [32mINFO [m [m[Server thread][m [m.playerSample(271)[m: Server Ping Player Sample Count: 12
+2024-12-08 21:21:24,117 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: Using 4 threads for Netty based IO
+2024-12-08 21:21:24,121 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: Debug logging is enabled
+2024-12-08 21:21:24,205 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/pale_hound-server.toml is not correct. Correcting
+2024-12-08 21:21:24,207 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,208 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,209 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 800. 
+2024-12-08 21:21:24,210 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 1200. 
+2024-12-08 21:21:24,213 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.3. 
+2024-12-08 21:21:24,213 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 1400. 
+2024-12-08 21:21:24,215 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,217 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 740. 
+2024-12-08 21:21:24,227 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 860. 
+2024-12-08 21:21:24,228 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,231 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 300. 
+2024-12-08 21:21:24,232 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 30. 
+2024-12-08 21:21:24,234 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,238 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,239 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.005. 
+2024-12-08 21:21:24,242 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 500. 
+2024-12-08 21:21:24,243 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,245 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 8. 
+2024-12-08 21:21:24,248 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,250 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 3. 
+2024-12-08 21:21:24,259 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 20. 
+2024-12-08 21:21:24,260 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,261 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,262 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,262 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,263 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, true. 
+2024-12-08 21:21:24,263 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, false. 
+2024-12-08 21:21:24,264 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, [minecraft:badlands, minecraft:bamboo_jungle, minecraft:basalt_deltas, minecraft:beach, minecraft:birch_forest, minecraft:cold_ocean, minecraft:crimson_forest, minecraft:dark_forest, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_ocean, minecraft:desert, minecraft:eroded_badlands, minecraft:flower_forest, minecraft:forest, minecraft:grove, minecraft:jungle, minecraft:lukewarm_ocean, minecraft:mangrove_swamp, minecraft:meadow, minecraft:mushroom_fields, minecraft:ocean, minecraft:old_growth_birch_forest, minecraft:old_growth_pine_taiga, minecraft:old_growth_spruce_taiga, minecraft:plains, minecraft:river, minecraft:savanna, minecraft:savanna_plateau, minecraft:sparse_jungle, minecraft:stony_peaks, minecraft:stony_shore, minecraft:sunflower_plains, minecraft:swamp, minecraft:taiga, minecraft:warm_ocean, minecraft:windswept_forest, minecraft:windswept_gravelly_hills, minecraft:wooded_woodlands]. 
+2024-12-08 21:21:24,266 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,267 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 50. 
+2024-12-08 21:21:24,267 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, true. 
+2024-12-08 21:21:24,268 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,268 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,276 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,277 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_armor was corrected from null to its default, 10.0. 
+2024-12-08 21:21:24,277 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 80.0. 
+2024-12-08 21:21:24,278 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 20.0. 
+2024-12-08 21:21:24,278 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.35. 
+2024-12-08 21:21:24,279 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.7. 
+2024-12-08 21:21:24,280 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 1.5. 
+2024-12-08 21:21:24,281 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,281 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc.only_play_noise_to_target was corrected from null to its default, false. 
+2024-12-08 21:21:24,292 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/skinwalker_overhaul-server.toml is not correct. Correcting
+2024-12-08 21:21:24,293 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,293 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,294 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 120. 
+2024-12-08 21:21:24,295 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 300. 
+2024-12-08 21:21:24,295 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.3. 
+2024-12-08 21:21:24,296 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 400. 
+2024-12-08 21:21:24,296 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,297 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 240. 
+2024-12-08 21:21:24,297 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 360. 
+2024-12-08 21:21:24,298 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,299 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 300. 
+2024-12-08 21:21:24,299 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 30. 
+2024-12-08 21:21:24,300 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,301 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,312 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.05. 
+2024-12-08 21:21:24,312 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 500. 
+2024-12-08 21:21:24,313 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,314 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,314 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,315 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 16. 
+2024-12-08 21:21:24,315 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 16. 
+2024-12-08 21:21:24,316 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,316 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,317 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,317 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,317 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, true. 
+2024-12-08 21:21:24,318 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, false. 
+2024-12-08 21:21:24,318 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, []. 
+2024-12-08 21:21:24,319 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,320 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 60. 
+2024-12-08 21:21:24,320 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_disable_shields was corrected from null to its default, false. 
+2024-12-08 21:21:24,321 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, true. 
+2024-12-08 21:21:24,321 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_break_door was corrected from null to its default, true. 
+2024-12-08 21:21:24,321 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.break_door_time was corrected from null to its default, 3. 
+2024-12-08 21:21:24,322 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,322 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,332 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,333 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 250.0. 
+2024-12-08 21:21:24,333 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 7.5. 
+2024-12-08 21:21:24,334 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.35. 
+2024-12-08 21:21:24,334 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.6. 
+2024-12-08 21:21:24,335 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 1.5. 
+2024-12-08 21:21:24,336 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,336 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc.only_play_noise_to_target was corrected from null to its default, false. 
+2024-12-08 21:21:24,338 [32mINFO [m [m[Thread-0][m [md.c.s.SkinwalkerOverhaul.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,342 [32mINFO [m [m[Thread-0][m [md.c.s.SkinwalkerOverhaul.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,343 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/cave_dweller-server.toml is not correct. Correcting
+2024-12-08 21:21:24,344 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,344 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,344 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 300. 
+2024-12-08 21:21:24,345 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 600. 
+2024-12-08 21:21:24,346 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.4. 
+2024-12-08 21:21:24,346 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 1200. 
+2024-12-08 21:21:24,347 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,347 [32mINFO [m [m[Thread-0][m [md.c.s.SkinwalkerOverhaul.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,347 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 240. 
+2024-12-08 21:21:24,348 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 360. 
+2024-12-08 21:21:24,349 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,349 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 300. 
+2024-12-08 21:21:24,350 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 30. 
+2024-12-08 21:21:24,353 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,354 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,354 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.005. 
+2024-12-08 21:21:24,355 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 40. 
+2024-12-08 21:21:24,359 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, false. 
+2024-12-08 21:21:24,360 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 8. 
+2024-12-08 21:21:24,361 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,361 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 5. 
+2024-12-08 21:21:24,362 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 16. 
+2024-12-08 21:21:24,362 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,363 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,363 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,364 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,371 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, false. 
+2024-12-08 21:21:24,372 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, true. 
+2024-12-08 21:21:24,373 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, []. 
+2024-12-08 21:21:24,374 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,374 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 60. 
+2024-12-08 21:21:24,374 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, true. 
+2024-12-08 21:21:24,375 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_break_door was corrected from null to its default, true. 
+2024-12-08 21:21:24,375 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.break_door_time was corrected from null to its default, 3. 
+2024-12-08 21:21:24,376 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,376 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,377 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,377 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 60.0. 
+2024-12-08 21:21:24,378 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 6.0. 
+2024-12-08 21:21:24,378 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.35. 
+2024-12-08 21:21:24,378 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.5. 
+2024-12-08 21:21:24,379 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 1.5. 
+2024-12-08 21:21:24,381 [32mINFO [m [m[Thread-0][m [md.c.c.CaveDweller.reloadConfiguration(36)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,383 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/kim_dweller-server.toml is not correct. Correcting
+2024-12-08 21:21:24,385 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,385 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,385 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 300. 
+2024-12-08 21:21:24,386 [32mINFO [m [m[Thread-0][m [md.c.c.CaveDweller.reloadConfiguration(36)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,386 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 450. 
+2024-12-08 21:21:24,387 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.4. 
+2024-12-08 21:21:24,387 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 1200. 
+2024-12-08 21:21:24,404 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,404 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 300. 
+2024-12-08 21:21:24,405 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 450. 
+2024-12-08 21:21:24,405 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,405 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 300. 
+2024-12-08 21:21:24,406 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 30. 
+2024-12-08 21:21:24,406 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,407 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,407 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.005. 
+2024-12-08 21:21:24,408 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 300. 
+2024-12-08 21:21:24,408 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,409 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,409 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,409 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 1. 
+2024-12-08 21:21:24,410 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 16. 
+2024-12-08 21:21:24,410 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,410 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,411 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,411 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,411 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, true. 
+2024-12-08 21:21:24,416 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, false. 
+2024-12-08 21:21:24,416 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, []. 
+2024-12-08 21:21:24,417 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,417 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 60. 
+2024-12-08 21:21:24,418 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_disable_shields was corrected from null to its default, false. 
+2024-12-08 21:21:24,418 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, true. 
+2024-12-08 21:21:24,419 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_break_door was corrected from null to its default, true. 
+2024-12-08 21:21:24,419 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.break_door_time was corrected from null to its default, 3. 
+2024-12-08 21:21:24,419 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,420 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,422 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,422 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 200.0. 
+2024-12-08 21:21:24,422 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 8.0. 
+2024-12-08 21:21:24,423 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.47. 
+2024-12-08 21:21:24,423 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.4. 
+2024-12-08 21:21:24,432 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 1.5. 
+2024-12-08 21:21:24,434 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,435 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc.only_play_noise_to_target was corrected from null to its default, false. 
+2024-12-08 21:21:24,438 [32mINFO [m [m[Thread-0][m [md.c.k.KimDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,442 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/irritator-server.toml is not correct. Correcting
+2024-12-08 21:21:24,442 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,443 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,443 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 300. 
+2024-12-08 21:21:24,443 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 600. 
+2024-12-08 21:21:24,444 [32mINFO [m [m[Thread-0][m [md.c.k.KimDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,445 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.4. 
+2024-12-08 21:21:24,447 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 1200. 
+2024-12-08 21:21:24,447 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,448 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 240. 
+2024-12-08 21:21:24,448 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 360. 
+2024-12-08 21:21:24,450 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,450 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 300. 
+2024-12-08 21:21:24,451 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 30. 
+2024-12-08 21:21:24,452 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,456 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,457 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.005. 
+2024-12-08 21:21:24,458 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 40. 
+2024-12-08 21:21:24,459 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, false. 
+2024-12-08 21:21:24,460 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 8. 
+2024-12-08 21:21:24,460 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,461 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 3. 
+2024-12-08 21:21:24,462 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 16. 
+2024-12-08 21:21:24,463 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,464 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,466 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,467 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,467 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, false. 
+2024-12-08 21:21:24,468 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, true. 
+2024-12-08 21:21:24,469 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, []. 
+2024-12-08 21:21:24,470 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,470 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 60. 
+2024-12-08 21:21:24,471 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_disable_shields was corrected from null to its default, false. 
+2024-12-08 21:21:24,471 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, true. 
+2024-12-08 21:21:24,472 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_break_door was corrected from null to its default, true. 
+2024-12-08 21:21:24,473 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.break_door_time was corrected from null to its default, 3. 
+2024-12-08 21:21:24,473 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,474 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,475 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,475 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 250.0. 
+2024-12-08 21:21:24,476 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 8.5. 
+2024-12-08 21:21:24,476 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.45. 
+2024-12-08 21:21:24,477 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.51. 
+2024-12-08 21:21:24,477 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 1.5. 
+2024-12-08 21:21:24,480 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,481 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc.only_play_noise_to_target was corrected from null to its default, false. 
+2024-12-08 21:21:24,483 [32mINFO [m [m[Thread-0][m [md.c.i.Irritator.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,487 [32mINFO [m [m[Thread-0][m [md.c.i.Irritator.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,489 [32mINFO [m [m[Thread-0][m [md.c.i.Irritator.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,490 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/torture-server.toml is not correct. Correcting
+2024-12-08 21:21:24,490 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,493 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,493 [32mINFO [m [m[Thread-0][m [md.c.i.Irritator.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,494 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 300. 
+2024-12-08 21:21:24,495 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 600. 
+2024-12-08 21:21:24,495 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.4. 
+2024-12-08 21:21:24,496 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 1200. 
+2024-12-08 21:21:24,497 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,497 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 240. 
+2024-12-08 21:21:24,498 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 360. 
+2024-12-08 21:21:24,501 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,502 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 300. 
+2024-12-08 21:21:24,502 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 30. 
+2024-12-08 21:21:24,503 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,504 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,504 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.05. 
+2024-12-08 21:21:24,505 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 500. 
+2024-12-08 21:21:24,506 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,510 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,510 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,511 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 3. 
+2024-12-08 21:21:24,512 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 16. 
+2024-12-08 21:21:24,512 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,513 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,513 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,514 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,514 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, true. 
+2024-12-08 21:21:24,520 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, false. 
+2024-12-08 21:21:24,520 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, []. 
+2024-12-08 21:21:24,522 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,522 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 120. 
+2024-12-08 21:21:24,522 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_disable_shields was corrected from null to its default, true. 
+2024-12-08 21:21:24,523 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, true. 
+2024-12-08 21:21:24,523 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_break_door was corrected from null to its default, true. 
+2024-12-08 21:21:24,524 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.break_door_time was corrected from null to its default, 3. 
+2024-12-08 21:21:24,524 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,525 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,526 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,526 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 300.0. 
+2024-12-08 21:21:24,532 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 8.0. 
+2024-12-08 21:21:24,532 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.35. 
+2024-12-08 21:21:24,533 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.49. 
+2024-12-08 21:21:24,533 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 1.5. 
+2024-12-08 21:21:24,534 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,535 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc.only_play_noise_to_target was corrected from null to its default, false. 
+2024-12-08 21:21:24,537 [32mINFO [m [m[Thread-0][m [md.c.t.Torture.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,538 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/krampus-server.toml is not correct. Correcting
+2024-12-08 21:21:24,539 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,539 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,547 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 300. 
+2024-12-08 21:21:24,548 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 600. 
+2024-12-08 21:21:24,549 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.4. 
+2024-12-08 21:21:24,549 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 1200. 
+2024-12-08 21:21:24,550 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,550 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 240. 
+2024-12-08 21:21:24,551 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 360. 
+2024-12-08 21:21:24,551 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,552 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 300. 
+2024-12-08 21:21:24,552 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 30. 
+2024-12-08 21:21:24,553 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,554 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,554 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.005. 
+2024-12-08 21:21:24,555 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 500. 
+2024-12-08 21:21:24,555 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,556 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,556 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,557 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 3. 
+2024-12-08 21:21:24,557 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 16. 
+2024-12-08 21:21:24,558 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,561 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,561 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,562 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,562 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, true. 
+2024-12-08 21:21:24,563 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, false. 
+2024-12-08 21:21:24,564 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, []. 
+2024-12-08 21:21:24,573 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,573 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 60. 
+2024-12-08 21:21:24,574 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_disable_shields was corrected from null to its default, false. 
+2024-12-08 21:21:24,574 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, true. 
+2024-12-08 21:21:24,574 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_break_door was corrected from null to its default, true. 
+2024-12-08 21:21:24,575 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.break_door_time was corrected from null to its default, 3. 
+2024-12-08 21:21:24,575 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,575 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,577 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,577 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 320.0. 
+2024-12-08 21:21:24,577 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 6.5. 
+2024-12-08 21:21:24,578 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.35. 
+2024-12-08 21:21:24,578 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.5. 
+2024-12-08 21:21:24,579 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 2.0. 
+2024-12-08 21:21:24,580 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,580 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc.only_play_noise_to_target was corrected from null to its default, false. 
+2024-12-08 21:21:24,583 [32mINFO [m [m[Thread-0][m [md.c.k.Krampus.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,590 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/cartoon_dweller-server.toml is not correct. Correcting
+2024-12-08 21:21:24,591 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,592 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,593 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 300. 
+2024-12-08 21:21:24,594 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 600. 
+2024-12-08 21:21:24,595 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.4. 
+2024-12-08 21:21:24,597 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 1200. 
+2024-12-08 21:21:24,599 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,600 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 240. 
+2024-12-08 21:21:24,601 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 360. 
+2024-12-08 21:21:24,603 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,604 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 300. 
+2024-12-08 21:21:24,606 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 30. 
+2024-12-08 21:21:24,611 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,615 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,617 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.07. 
+2024-12-08 21:21:24,618 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 500. 
+2024-12-08 21:21:24,618 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,619 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,620 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,620 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 3. 
+2024-12-08 21:21:24,622 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 16. 
+2024-12-08 21:21:24,627 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,628 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,629 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,629 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,630 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, true. 
+2024-12-08 21:21:24,631 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, false. 
+2024-12-08 21:21:24,631 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, []. 
+2024-12-08 21:21:24,637 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,638 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 60. 
+2024-12-08 21:21:24,639 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_disable_shields was corrected from null to its default, true. 
+2024-12-08 21:21:24,639 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, true. 
+2024-12-08 21:21:24,640 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_break_door was corrected from null to its default, true. 
+2024-12-08 21:21:24,641 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.break_door_time was corrected from null to its default, 3. 
+2024-12-08 21:21:24,641 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,642 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,644 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,645 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 690.0. 
+2024-12-08 21:21:24,647 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 15.0. 
+2024-12-08 21:21:24,649 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.35. 
+2024-12-08 21:21:24,652 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.51. 
+2024-12-08 21:21:24,652 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 1.5. 
+2024-12-08 21:21:24,654 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,655 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc.only_play_noise_to_target was corrected from null to its default, false. 
+2024-12-08 21:21:24,661 [32mINFO [m [m[Thread-0][m [md.c.c.CartoonDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,662 [32mINFO [m [m[Thread-0][m [md.c.c.CartoonDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,664 [32mINFO [m [m[Thread-0][m [md.c.c.CartoonDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,668 [32mINFO [m [m[Thread-0][m [md.c.c.CartoonDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,671 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/sackman-server.toml is not correct. Correcting
+2024-12-08 21:21:24,680 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,680 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,680 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 200. 
+2024-12-08 21:21:24,681 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 500. 
+2024-12-08 21:21:24,681 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.4. 
+2024-12-08 21:21:24,681 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 1000. 
+2024-12-08 21:21:24,682 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,682 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 220. 
+2024-12-08 21:21:24,682 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 340. 
+2024-12-08 21:21:24,683 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,683 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 280. 
+2024-12-08 21:21:24,683 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 30. 
+2024-12-08 21:21:24,685 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,685 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,686 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.008. 
+2024-12-08 21:21:24,686 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 255. 
+2024-12-08 21:21:24,686 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,687 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,689 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,690 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 3. 
+2024-12-08 21:21:24,691 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 16. 
+2024-12-08 21:21:24,695 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,696 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,697 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,698 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,699 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, false. 
+2024-12-08 21:21:24,700 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, true. 
+2024-12-08 21:21:24,701 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, []. 
+2024-12-08 21:21:24,704 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,705 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 60. 
+2024-12-08 21:21:24,706 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, false. 
+2024-12-08 21:21:24,710 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_break_door was corrected from null to its default, true. 
+2024-12-08 21:21:24,710 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.break_door_time was corrected from null to its default, 3. 
+2024-12-08 21:21:24,713 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,714 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,719 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,719 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 60.0. 
+2024-12-08 21:21:24,720 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 6.0. 
+2024-12-08 21:21:24,721 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.35. 
+2024-12-08 21:21:24,721 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.5. 
+2024-12-08 21:21:24,722 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 1.5. 
+2024-12-08 21:21:24,723 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,724 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc.only_play_noise_to_target was corrected from null to its default, false. 
+2024-12-08 21:21:24,726 [32mINFO [m [m[Thread-0][m [md.c.s.SackMan.reloadConfiguration(35)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,728 [32mINFO [m [m[Thread-0][m [md.c.s.SackMan.reloadConfiguration(35)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,735 [32mINFO [m [m[Thread-0][m [md.c.s.SackMan.reloadConfiguration(35)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,738 [32mINFO [m [m[Thread-0][m [md.c.s.SackMan.reloadConfiguration(35)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,741 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.setConfig(87)[m: Configuration file ./world/serverconfig/mimicer-server.toml is not correct. Correcting
+2024-12-08 21:21:24,744 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,744 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,744 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_min was corrected from null to its default, 10. 
+2024-12-08 21:21:24,745 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_max was corrected from null to its default, 10. 
+2024-12-08 21:21:24,745 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown_chance was corrected from null to its default, 0.4. 
+2024-12-08 21:21:24,746 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Spawn.can_spawn_cooldown was corrected from null to its default, 700. 
+2024-12-08 21:21:24,746 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,747 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_min was corrected from null to its default, 100. 
+2024-12-08 21:21:24,747 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Noise.reset_noise_max was corrected from null to its default, 180. 
+2024-12-08 21:21:24,748 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,748 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave was corrected from null to its default, 500. 
+2024-12-08 21:21:24,749 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.Leave.time_until_leave_chase was corrected from null to its default, 24. 
+2024-12-08 21:21:24,750 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Timers.surface_timer_multiplier was corrected from null to its default, 1.0. 
+2024-12-08 21:21:24,753 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,754 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_chance_per_tick was corrected from null to its default, 0.05. 
+2024-12-08 21:21:24,754 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_height was corrected from null to its default, 500. 
+2024-12-08 21:21:24,755 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.allow_surface_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,755 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.sky_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,756 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.block_light_level was corrected from null to its default, 15. 
+2024-12-08 21:21:24,756 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.maximum_amount was corrected from null to its default, 1. 
+2024-12-08 21:21:24,757 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.spawn_distance was corrected from null to its default, 16. 
+2024-12-08 21:21:24,757 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.check_path_to_spawn was corrected from null to its default, true. 
+2024-12-08 21:21:24,758 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,758 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Dimensions.dimension_whitelist was corrected from null to its default, [minecraft:overworld]. 
+2024-12-08 21:21:24,759 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,759 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.override_biome_datapack_config was corrected from null to its default, false. 
+2024-12-08 21:21:24,759 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes_is_whitelist was corrected from null to its default, true. 
+2024-12-08 21:21:24,760 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Spawn Conditions.Biomes.surface_biomes was corrected from null to its default, []. 
+2024-12-08 21:21:24,763 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,767 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.spotting_range was corrected from null to its default, 120. 
+2024-12-08 21:21:24,768 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_disable_shields was corrected from null to its default, false. 
+2024-12-08 21:21:24,769 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_climb was corrected from null to its default, true. 
+2024-12-08 21:21:24,773 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.can_break_door was corrected from null to its default, true. 
+2024-12-08 21:21:24,777 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.break_door_time was corrected from null to its default, 3. 
+2024-12-08 21:21:24,777 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.allow_riding was corrected from null to its default, false. 
+2024-12-08 21:21:24,778 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Behaviour.target_invisible was corrected from null to its default, true. 
+2024-12-08 21:21:24,781 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,781 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.maximum_health was corrected from null to its default, 150.0. 
+2024-12-08 21:21:24,782 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_damage was corrected from null to its default, 8.0. 
+2024-12-08 21:21:24,783 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.attack_speed was corrected from null to its default, 0.35. 
+2024-12-08 21:21:24,783 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.movement_speed was corrected from null to its default, 0.5. 
+2024-12-08 21:21:24,784 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Attributes.depth_strider_bonus was corrected from null to its default, 1.5. 
+2024-12-08 21:21:24,787 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc was corrected from null to its default, SimpleCommentedConfig:{}. 
+2024-12-08 21:21:24,789 [33mWARN [m [m[Server thread][m [mn.m.c.ForgeConfigSpec.lambda$setConfig$0(90)[m: Incorrect key Misc.only_play_noise_to_target was corrected from null to its default, false. 
+2024-12-08 21:21:24,791 [32mINFO [m [m[Thread-0][m [md.c.m.Mimicer.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,792 [32mINFO [m [m[Thread-0][m [md.c.m.Mimicer.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,793 [32mINFO [m [m[Thread-0][m [md.c.m.Mimicer.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,795 [32mINFO [m [m[Thread-0][m [md.c.m.Mimicer.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:21:24,852 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(198)[m: Preparing level "world"
+2024-12-08 21:21:39,507 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension minecraft:overworld
+2024-12-08 21:21:48,346 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,348 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,349 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,350 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,350 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,351 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,353 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,354 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,355 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,356 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,358 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,358 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,359 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,360 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,361 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,363 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,365 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,368 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:48,509 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:49,009 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:49,508 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:50,123 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 1%
+2024-12-08 21:21:50,824 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 2%
+2024-12-08 21:21:51,026 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 28%
+2024-12-08 21:21:51,510 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 82%
+2024-12-08 21:21:52,437 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 12930 ms
+2024-12-08 21:21:52,518 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension the_silence:pesadilla_dimension
+2024-12-08 21:21:53,916 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:53,925 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:53,928 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:54,036 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:54,529 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:55,036 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:55,536 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:56,028 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:56,536 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:57,032 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:57,656 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:58,022 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:58,522 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:59,028 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:21:59,692 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:00,035 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:00,522 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:01,028 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:01,569 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:02,064 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:02,530 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:03,064 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:03,523 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:04,031 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:04,551 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:05,021 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:05,541 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:06,026 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:06,549 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:07,024 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:07,537 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:08,028 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:08,525 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:09,037 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:09,549 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:10,021 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:10,521 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:11,055 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:11,527 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:12,058 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:12,548 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:13,032 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:13,557 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:14,087 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:14,552 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:15,043 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:15,521 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:16,020 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:16,521 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:17,055 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:17,533 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:18,057 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:18,527 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:19,081 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:19,524 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:20,021 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:20,523 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:21,036 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:21,586 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:22,045 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:22,523 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:23,030 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:23,521 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:24,021 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:24,558 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:25,031 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:25,524 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:26,065 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:26,555 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:27,045 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:27,667 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:28,044 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:28,536 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:29,053 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:29,553 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:30,050 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:30,522 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:31,038 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:31,538 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:32,020 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:32,523 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:33,028 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:33,537 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:34,023 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:34,524 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:35,066 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:35,521 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:36,029 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:36,543 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:37,020 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:37,521 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:38,050 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:38,563 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:39,057 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:39,629 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:40,023 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:40,565 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:41,024 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:41,557 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:42,048 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:42,544 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:43,046 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:43,556 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:44,055 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:44,532 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:45,045 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 52526 ms
+2024-12-08 21:22:45,050 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension minecraft:the_nether
+2024-12-08 21:22:48,584 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:48,589 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:48,590 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:48,590 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:48,592 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:48,592 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:48,594 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:48,596 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:49,051 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:49,552 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:50,038 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 4987 ms
+2024-12-08 21:22:50,046 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension the_silence:prueba_bolsillo
+2024-12-08 21:22:51,273 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:51,284 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:51,286 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:51,554 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:52,174 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:52,551 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:53,083 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:53,564 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:54,088 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:54,594 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:55,100 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:55,579 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:56,079 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:56,590 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:57,076 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:57,549 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:58,081 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:58,593 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:59,083 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:22:59,574 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:00,047 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:00,565 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:01,070 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:01,578 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:02,096 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:02,564 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:03,061 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:03,578 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:04,053 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:04,551 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:05,058 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:05,591 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:06,055 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:06,565 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:07,056 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:07,582 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:08,047 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:08,559 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:09,086 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:09,600 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:10,077 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:10,596 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:11,049 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:11,547 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:12,084 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:12,571 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:13,118 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:13,662 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:14,071 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:14,569 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:15,055 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:15,569 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:16,076 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:16,549 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:17,079 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:17,587 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:18,075 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:18,582 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:19,086 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:19,596 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:20,056 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:20,615 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:21,078 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:21,596 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:22,051 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:22,575 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:23,074 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:23,607 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:24,103 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:23:24,550 [32mINFO [m [m[Worker-Main-9][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
