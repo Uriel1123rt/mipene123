@@ -1,19 +1,253 @@
-2024-12-08 21:24:36,551 [32mINFO [m [m[main][m [mc.m.m.Launcher.main(76)[m: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 43.4.2, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853, nogui]
-2024-12-08 21:24:36,561 [32mINFO [m [m[main][m [mc.m.m.Launcher.<init>(51)[m: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.13 by Ubuntu; OS Linux arch amd64 version 6.5.0-1025-azure
-2024-12-08 21:24:37,014 [32mINFO [m [m[main][m [mmixin.info(97)[m: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/mipene123/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2382!/ Service=ModLauncher Env=SERVER
-2024-12-08 21:24:37,727 [32mINFO [m [m[main][m [mn.m.f.l.m.JarInJarDependencyLocator.scanMods(54)[m: No dependencies to load found. Skipping!
-2024-12-08 21:24:40,661 [32mINFO [m [m[main][m [mmixin.info(97)[m: Compatibility level set to JAVA_17
-2024-12-08 21:24:40,752 [32mINFO [m [m[main][m [mc.m.m.LaunchServiceHandler.launch(52)[m: Launching target 'forgeserver' with arguments [nogui]
-2024-12-08 21:24:49,681 [32mINFO [m [m[main][m [mn.m.u.d.DataFixers.m_14529_(272)[m: Building unoptimized datafixer
-2024-12-08 21:24:53,699 [32mINFO [m [m[modloading-worker-0][m [mn.m.c.ForgeMod.<init>(428)[m: Forge mod loading, version 43.4.2, for MC 1.19.2 with MCP 20220805.130853
-2024-12-08 21:24:53,702 [32mINFO [m [m[modloading-worker-0][m [mn.m.c.MinecraftForge.initialize(49)[m: MinecraftForge v43.4.2 Initialized
-2024-12-08 21:24:54,128 [32mINFO [m [m[modloading-worker-0][m [mc.m.MohistMC.init(39)[m: EventDispatcherRegistry initialized
-2024-12-08 21:24:54,961 [32mINFO [m [m[modloading-worker-0][m [ms.l.w.Init.onCommonSetup(17)[m: From The Fog Loaded Successfully!
-2024-12-08 21:24:57,616 [32mINFO [m [m[main][m [mc.m.a.y.YggdrasilAuthenticationService.<init>(74)[m: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-2024-12-08 21:24:58,640 [33mWARN [m [m[main][m [mn.m.s.p.VanillaPackResources.m_182299_(58)[m: Assets URL 'union:/workspaces/mipene123/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23171!/assets/.mcassetsroot' uses unexpected schema
-2024-12-08 21:24:58,641 [33mWARN [m [m[main][m [mn.m.s.p.VanillaPackResources.m_182299_(58)[m: Assets URL 'union:/workspaces/mipene123/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23171!/data/.mcassetsroot' uses unexpected schema
-2024-12-08 21:25:03,743 [32mINFO [m [m[main][m [mn.m.w.i.c.RecipeManager.m_5787_(97)[m: Loaded 7 recipes
-2024-12-08 21:25:04,407 [1;31mERROR[m [m[main][m [mn.m.s.ServerFunctionLibrary.m_179951_(102)[m: Failed to load function watching:check
+2024-12-08 21:36:18,540 [32mINFO [m [m[main][m [mc.m.m.Launcher.main(76)[m: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 43.4.2, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853, nogui]
+2024-12-08 21:36:18,551 [32mINFO [m [m[main][m [mc.m.m.Launcher.<init>(51)[m: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.13 by Ubuntu; OS Linux arch amd64 version 6.5.0-1025-azure
+2024-12-08 21:36:18,912 [32mINFO [m [m[main][m [mmixin.info(97)[m: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/mipene123/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2382!/ Service=ModLauncher Env=SERVER
+2024-12-08 21:36:19,606 [32mINFO [m [m[main][m [mn.m.f.l.m.JarInJarDependencyLocator.scanMods(54)[m: No dependencies to load found. Skipping!
+2024-12-08 21:36:22,777 [32mINFO [m [m[main][m [mmixin.info(97)[m: Compatibility level set to JAVA_17
+2024-12-08 21:36:22,930 [32mINFO [m [m[main][m [mc.m.m.LaunchServiceHandler.launch(52)[m: Launching target 'forgeserver' with arguments [nogui]
+2024-12-08 21:36:31,599 [32mINFO [m [m[main][m [mn.m.u.d.DataFixers.m_14529_(272)[m: Building unoptimized datafixer
+2024-12-08 21:36:35,426 [32mINFO [m [m[modloading-worker-0][m [mn.m.c.ForgeMod.<init>(428)[m: Forge mod loading, version 43.4.2, for MC 1.19.2 with MCP 20220805.130853
+2024-12-08 21:36:35,429 [32mINFO [m [m[modloading-worker-0][m [mn.m.c.MinecraftForge.initialize(49)[m: MinecraftForge v43.4.2 Initialized
+2024-12-08 21:36:35,808 [32mINFO [m [m[modloading-worker-0][m [mc.m.MohistMC.init(39)[m: EventDispatcherRegistry initialized
+2024-12-08 21:36:36,602 [32mINFO [m [m[modloading-worker-0][m [ms.l.w.Init.onCommonSetup(17)[m: From The Fog Loaded Successfully!
+2024-12-08 21:36:39,435 [32mINFO [m [m[main][m [mc.m.a.y.YggdrasilAuthenticationService.<init>(74)[m: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+2024-12-08 21:36:39,520 [33mWARN [m [m[main][m [mn.m.c.ForgeHooks.readAdditionalLevelSaveData(1510)[m: The following mods have version differences that were not resolved:
+the_silence (version 0.2 -> MISSING)
+Things may not work well.
+2024-12-08 21:36:39,617 [1;31mERROR[m [m[main][m [mn.m.r.GameData.lambda$injectSnapshot$31(703)[m: Unidentified mapping from registry minecraft:block
+	the_silence:bloque_sonrisa: 934
+	the_silence:sad_satan: 936
+	the_silence:sombra_linterna: 933
+	the_silence:tele: 935
+
+2024-12-08 21:36:39,618 [1;31mERROR[m [m[main][m [mn.m.r.GameData.lambda$injectSnapshot$31(703)[m: Unidentified mapping from registry minecraft:entity_type
+	the_silence:asucwacho: 156
+	the_silence:cosa_screamer: 154
+	the_silence:la_cosa_real: 150
+	the_silence:nothing_playing: 152
+	the_silence:projectile_bloque_proyector: 151
+	the_silence:the_cosa: 149
+	the_silence:the_cosa_2: 155
+	the_silence:the_silence_door: 148
+	the_silence:the_silence_principal: 147
+	the_silence:the_silence_screamer: 153
+	the_silence:the_silence_sleep: 146
+
+2024-12-08 21:36:39,619 [1;31mERROR[m [m[main][m [mn.m.r.GameData.lambda$injectSnapshot$31(703)[m: Unidentified mapping from registry minecraft:item
+	the_silence:apuntar_luz: 1186
+	the_silence:bloque_sonrisa: 1188
+	the_silence:flashlight: 1185
+	the_silence:flashlightoff: 1187
+	the_silence:la_cosa_real_spawn_egg: 1183
+	the_silence:sad_satan: 1192
+	the_silence:sombra_linterna: 1184
+	the_silence:tape_ecos_pasados: 1191
+	the_silence:tape_monster: 1190
+	the_silence:tele: 1189
+	the_silence:the_silence_principal_spawn_egg: 1182
+
+2024-12-08 21:36:39,621 [1;31mERROR[m [m[main][m [mn.m.r.GameData.lambda$injectSnapshot$31(703)[m: Unidentified mapping from registry minecraft:mob_effect
+	the_silence:al_dormir_efectgo: 59
+	the_silence:bioma_pocion_efecto: 44
+	the_silence:corre_jugador_run: 40
+	the_silence:correr_moverse: 39
+	the_silence:efecto_despues_tetrico: 37
+	the_silence:efecto_pencil: 41
+	the_silence:efecto_pencil_turbio: 43
+	the_silence:efecto_tetrico: 36
+	the_silence:en_el_agua_cosa: 42
+	the_silence:estatica_nashe: 34
+	the_silence:miedo_se_va: 35
+	the_silence:shader_principal_pocion: 45
+	the_silence:susto_silence: 38
+	the_silence:susto_silence_10: 54
+	the_silence:susto_silence_11: 55
+	the_silence:susto_silence_12: 56
+	the_silence:susto_silence_13: 57
+	the_silence:susto_silence_14: 58
+	the_silence:susto_silence_2: 46
+	the_silence:susto_silence_3: 47
+	the_silence:susto_silence_4: 48
+	the_silence:susto_silence_5: 49
+	the_silence:susto_silence_6: 50
+	the_silence:susto_silence_7: 51
+	the_silence:susto_silence_8: 52
+	the_silence:susto_silence_9: 53
+
+2024-12-08 21:36:39,622 [1;31mERROR[m [m[main][m [mn.m.r.GameData.lambda$injectSnapshot$31(703)[m: Unidentified mapping from registry minecraft:point_of_interest_type
+	the_silence:wandering_library: 20
+
+2024-12-08 21:36:39,623 [1;31mERROR[m [m[main][m [mn.m.r.GameData.lambda$injectSnapshot$31(703)[m: Unidentified mapping from registry minecraft:sound_event
+	the_silence:audionuevopresentacion: 1379
+	the_silence:audioreproducion2: 1387
+	the_silence:audioreproducion3: 1407
+	the_silence:breath: 1402
+	the_silence:brevexdsustete: 1385
+	the_silence:casetesonido: 1386
+	the_silence:creepersonido: 1405
+	the_silence:cuevaturbio: 1406
+	the_silence:data-transmission-sound: 1389
+	the_silence:deep_cave: 1370
+	the_silence:eerie-music-box: 1401
+	the_silence:grass: 1403
+	the_silence:laser-weld: 1390
+	the_silence:latidos: 1376
+	the_silence:meurte: 1369
+	the_silence:mic-noise: 1399
+	the_silence:pasos: 1374
+	the_silence:persecucion2: 1372
+	the_silence:radio-confusion-: 1391
+	the_silence:rechinidos: 1382
+	the_silence:record-32043: 1398
+	the_silence:respiracion: 1375
+	the_silence:risa: 1371
+	the_silence:risa1: 1373
+	the_silence:risarisita: 1384
+	the_silence:roarscreamer: 1383
+	the_silence:rustling-leaves: 1392
+	the_silence:sound-interference: 1393
+	the_silence:spooky-largo30: 1400
+	the_silence:spooky-music-box-radio: 1394
+	the_silence:spookylargo: 1397
+	the_silence:sshh: 1388
+	the_silence:static-electicity-193505: 1395
+	the_silence:susto: 1381
+	the_silence:turbioaudio: 1380
+	the_silence:tv-glitch: 1396
+	the_silence:vhsecos: 1378
+	the_silence:vhsmonster: 1377
+	the_silence:wood-pisadas: 1404
+
+2024-12-08 21:36:39,628 [1;31mERROR[m [m[main][m [mn.m.r.GameData.lambda$injectSnapshot$31(703)[m: Unidentified mapping from registry minecraft:villager_profession
+	the_silence:wandering_library: 15
+
+2024-12-08 21:36:39,629 [1;31mERROR[m [m[main][m [mn.m.r.GameData.lambda$injectSnapshot$31(703)[m: Unidentified mapping from registry minecraft:worldgen/biome
+	the_silence:pesadilla_bioma: 63
+
+2024-12-08 21:36:39,632 [33mWARN [m [m[main][m [mn.m.r.GameData.injectSnapshot(733)[m: Forge Mod Loader detected missing registry entries.
+
+There are 94 missing entries in this save.
+If you continue the missing entries will get removed.
+A world backup will be automatically created in your saves directory.
+
+
+2024-12-08 21:36:39,632 [33mWARN [m [m[main][m [mn.m.r.GameData.injectSnapshot(734)[m: Missing minecraft:sound_event:
+    the_silence:audionuevopresentacion
+    the_silence:audioreproducion2
+    the_silence:audioreproducion3
+    the_silence:breath
+    the_silence:brevexdsustete
+    the_silence:casetesonido
+    the_silence:creepersonido
+    the_silence:cuevaturbio
+    the_silence:data-transmission-sound
+    the_silence:deep_cave
+    the_silence:eerie-music-box
+    the_silence:grass
+    the_silence:laser-weld
+    the_silence:latidos
+    the_silence:meurte
+    the_silence:mic-noise
+    the_silence:pasos
+    the_silence:persecucion2
+    the_silence:radio-confusion-
+    the_silence:rechinidos
+    the_silence:record-32043
+    the_silence:respiracion
+    the_silence:risa
+    the_silence:risa1
+    the_silence:risarisita
+    the_silence:roarscreamer
+    the_silence:rustling-leaves
+    the_silence:sound-interference
+    the_silence:spooky-largo30
+    the_silence:spooky-music-box-radio
+    the_silence:spookylargo
+    the_silence:sshh
+    the_silence:static-electicity-193505
+    the_silence:susto
+    the_silence:turbioaudio
+    the_silence:tv-glitch
+    the_silence:vhsecos
+    the_silence:vhsmonster
+    the_silence:wood-pisadas
+
+Missing minecraft:villager_profession:
+    the_silence:wandering_library
+
+Missing minecraft:item:
+    the_silence:apuntar_luz
+    the_silence:bloque_sonrisa
+    the_silence:flashlight
+    the_silence:flashlightoff
+    the_silence:la_cosa_real_spawn_egg
+    the_silence:sad_satan
+    the_silence:sombra_linterna
+    the_silence:tape_ecos_pasados
+    the_silence:tape_monster
+    the_silence:tele
+    the_silence:the_silence_principal_spawn_egg
+
+Missing minecraft:block:
+    the_silence:bloque_sonrisa
+    the_silence:sad_satan
+    the_silence:sombra_linterna
+    the_silence:tele
+
+Missing minecraft:point_of_interest_type:
+    the_silence:wandering_library
+
+Missing minecraft:mob_effect:
+    the_silence:al_dormir_efectgo
+    the_silence:bioma_pocion_efecto
+    the_silence:corre_jugador_run
+    the_silence:correr_moverse
+    the_silence:efecto_despues_tetrico
+    the_silence:efecto_pencil
+    the_silence:efecto_pencil_turbio
+    the_silence:efecto_tetrico
+    the_silence:en_el_agua_cosa
+    the_silence:estatica_nashe
+    the_silence:miedo_se_va
+    the_silence:shader_principal_pocion
+    the_silence:susto_silence
+    the_silence:susto_silence_10
+    the_silence:susto_silence_11
+    the_silence:susto_silence_12
+    the_silence:susto_silence_13
+    the_silence:susto_silence_14
+    the_silence:susto_silence_2
+    the_silence:susto_silence_3
+    the_silence:susto_silence_4
+    the_silence:susto_silence_5
+    the_silence:susto_silence_6
+    the_silence:susto_silence_7
+    the_silence:susto_silence_8
+    the_silence:susto_silence_9
+
+Missing minecraft:worldgen/biome:
+    the_silence:pesadilla_bioma
+
+Missing minecraft:entity_type:
+    the_silence:asucwacho
+    the_silence:cosa_screamer
+    the_silence:la_cosa_real
+    the_silence:nothing_playing
+    the_silence:projectile_bloque_proyector
+    the_silence:the_cosa
+    the_silence:the_cosa_2
+    the_silence:the_silence_door
+    the_silence:the_silence_principal
+    the_silence:the_silence_screamer
+    the_silence:the_silence_sleep
+
+
+2024-12-08 21:36:39,633 [1;31mERROR[m [m[main][m [mn.m.r.GameData.injectSnapshot(740)[m: There are unidentified mappings in this world - we are going to attempt to process anyway
+2024-12-08 21:36:40,747 [33mWARN [m [m[main][m [mn.m.s.p.VanillaPackResources.m_182299_(58)[m: Assets URL 'union:/workspaces/mipene123/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23169!/assets/.mcassetsroot' uses unexpected schema
+2024-12-08 21:36:40,748 [33mWARN [m [m[main][m [mn.m.s.p.VanillaPackResources.m_182299_(58)[m: Assets URL 'union:/workspaces/mipene123/servidor_minecraft/libraries/net/minecraft/server/1.19.2-20220805.130853/server-1.19.2-20220805.130853-srg.jar%23169!/data/.mcassetsroot' uses unexpected schema
+2024-12-08 21:36:40,829 [33mWARN [m [m[main][m [mn.m.s.MinecraftServer.m_129819_(1604)[m: Missing data pack mod:the_silence
+2024-12-08 21:36:43,360 [1;31mERROR[m [m[main][m [mn.m.w.l.s.LevelStorageSource.m_214642_(645)[m: WorldGenSettings: Registry is already frozen (requested key: ResourceKey[minecraft:worldgen/biome / the_silence:pesadilla_bioma]); List must have contents; Registry is already frozen (requested key: ResourceKey[minecraft:dimension_type / the_silence:pesadilla_dimension]); Registry is already frozen (requested key: ResourceKey[minecraft:worldgen/biome / the_silence:pesadilla_bioma]); List must have contents; Registry is already frozen (requested key: ResourceKey[minecraft:dimension_type / the_silence:prueba_bolsillo]) missed input: {"the_silence:pesadilla_dimension":{generator:{biome_source:{biomes:[{biome:"the_silence:pesadilla_bioma",parameters:{continentalness:0.0f,depth:0.0f,erosion:0.0f,humidity:0.0f,offset:0.0f,temperature:0.0f,weirdness:0.0f}}],type:"minecraft:multi_noise"},settings:{aquifers_enabled:1b,default_block:{Name:"the_silence:sad_satan",Properties:{facing:"north"}},default_fluid:{Name:"minecraft:void_air"},disable_mob_generation:0b,legacy_random_source:0b,noise:{height:384,min_y:-64,size_horizontal:1,size_vertical:2},noise_router:{barrier:{noise:"minecraft:aquifer_barrier",type:"minecraft:noise",xz_scale:1.0d,y_scale:0.5d},continents:"minecraft:overworld/continents",depth:"minecraft:overworld/depth",erosion:"minecraft:overworld/erosion",final_density:{argument1:{argument:{argument1:0.64d,argument2:{argument:{argument:{argument1:0.1171875d,argument2:{argument1:{from_value:0.0d,from_y:-64,to_value:1.0d,to_y:-40,type:"minecraft:y_clamped_gradient"},argument2:{argument1:-0.1171875d,argument2:{argument1:-0.078125d,argument2:{argument1:{from_value:1.0d,from_y:240,to_value:0.0d,to_y:256,type:"minecraft:y_clamped_gradient"},argument2:{argument1:0.078125d,argument2:{input:"minecraft:overworld/sloped_cheese",max_exclusive:1.5625d,min_inclusive:-1000000.0d,type:"minecraft:range_choice",when_in_range:{argument1:"minecraft:overworld/sloped_cheese",argument2:{argument1:5.0d,argument2:"minecraft:overworld/caves/entrances",type:"minecraft:mul"},type:"minecraft:min"},when_out_of_range:{argument1:{argument1:{argument1:{argument1:{argument1:4.0d,argument2:{argument:{noise:"minecraft:cave_layer",type:"minecraft:noise",xz_scale:1.0d,y_scale:8.0d},type:"minecraft:square"},type:"minecraft:mul"},argument2:{argument1:{input:{argument1:0.27d,argument2:{noise:"minecraft:cave_cheese",type:"minecraft:noise",xz_scale:1.0d,y_scale:0.6666666666666666d},type:"minecraft:add"},max:1.0d,min:-1.0d,type:"minecraft:clamp"},argument2:{input:{argument1:1.5d,argument2:{argument1:-0.64d,argument2:"minecraft:overworld/sloped_cheese",type:"minecraft:mul"},type:"minecraft:add"},max:0.5d,min:0.0d,type:"minecraft:clamp"},type:"minecraft:add"},type:"minecraft:add"},argument2:"minecraft:overworld/caves/entrances",type:"minecraft:min"},argument2:{argument1:"minecraft:overworld/caves/spaghetti_2d",argument2:"minecraft:overworld/caves/spaghetti_roughness_function",type:"minecraft:add"},type:"minecraft:min"},argument2:{input:"minecraft:overworld/caves/pillars",max_exclusive:0.03d,min_inclusive:-1000000.0d,type:"minecraft:range_choice",when_in_range:-1000000.0d,when_out_of_range:"minecraft:overworld/caves/pillars"},type:"minecraft:max"}},type:"minecraft:add"},type:"minecraft:mul"},type:"minecraft:add"},type:"minecraft:add"},type:"minecraft:mul"},type:"minecraft:add"},type:"minecraft:blend_density"},type:"minecraft:interpolated"},type:"minecraft:mul"},type:"minecraft:squeeze"},argument2:"minecraft:overworld/caves/noodle",type:"minecraft:min"},fluid_level_floodedness:{noise:"minecraft:aquifer_fluid_level_floodedness",type:"minecraft:noise",xz_scale:1.0d,y_scale:0.67d},fluid_level_spread:{noise:"minecraft:aquifer_fluid_level_spread",type:"minecraft:noise",xz_scale:1.0d,y_scale:0.7142857142857143d},initial_density_without_jaggedness:{argument1:0.1171875d,argument2:{argument1:{from_value:0.0d,from_y:-64,to_value:1.0d,to_y:-40,type:"minecraft:y_clamped_gradient"},argument2:{argument1:-0.1171875d,argument2:{argument1:-0.078125d,argument2:{argument1:{from_value:1.0d,from_y:240,to_value:0.0d,to_y:256,type:"minecraft:y_clamped_gradient"},argument2:{argument1:0.078125d,argument2:{input:{argument1:-0.703125d,argument2:{argument1:4.0d,argument2:{argument:{argument1:"minecraft:overworld/depth",argument2:{argument:"minecraft:overworld/factor",type:"minecraft:cache_2d"},type:"minecraft:mul"},type:"minecraft:quarter_negative"},type:"minecraft:mul"},type:"minecraft:add"},max:64.0d,min:-64.0d,type:"minecraft:clamp"},type:"minecraft:add"},type:"minecraft:mul"},type:"minecraft:add"},type:"minecraft:add"},type:"minecraft:mul"},type:"minecraft:add"},lava:{noise:"minecraft:aquifer_lava",type:"minecraft:noise",xz_scale:1.0d,y_scale:1.0d},ridges:"minecraft:overworld/ridges",temperature:{noise:"minecraft:temperature",shift_x:"minecraft:shift_x",shift_y:0.0d,shift_z:"minecraft:shift_z",type:"minecraft:shifted_noise",xz_scale:0.25d,y_scale:0.0d},vegetation:{noise:"minecraft:vegetation",shift_x:"minecraft:shift_x",shift_y:0.0d,shift_z:"minecraft:shift_z",type:"minecraft:shifted_noise",xz_scale:0.25d,y_scale:0.0d},vein_gap:{noise:"minecraft:ore_gap",type:"minecraft:noise",xz_scale:1.0d,y_scale:1.0d},vein_ridged:{argument1:-0.07999999821186066d,argument2:{argument1:{argument:{argument:{input:"minecraft:y",max_exclusive:51.0d,min_inclusive:-60.0d,type:"minecraft:range_choice",when_in_range:{noise:"minecraft:ore_vein_a",type:"minecraft:noise",xz_scale:4.0d,y_scale:4.0d},when_out_of_range:0.0d},type:"minecraft:interpolated"},type:"minecraft:abs"},argument2:{argument:{argument:{input:"minecraft:y",max_exclusive:51.0d,min_inclusive:-60.0d,type:"minecraft:range_choice",when_in_range:{noise:"minecraft:ore_vein_b",type:"minecraft:noise",xz_scale:4.0d,y_scale:4.0d},when_out_of_range:0.0d},type:"minecraft:interpolated"},type:"minecraft:abs"},type:"minecraft:max"},type:"minecraft:add"},vein_toggle:{argument:{input:"minecraft:y",max_exclusive:51.0d,min_inclusive:-60.0d,type:"minecraft:range_choice",when_in_range:{noise:"minecraft:ore_veininess",type:"minecraft:noise",xz_scale:1.5d,y_scale:1.5d},when_out_of_range:0.0d},type:"minecraft:interpolated"}},ore_veins_enabled:1b,sea_level:63,spawn_target:[],surface_rule:{sequence:[{if_true:{false_at_and_above:{above_bottom:5},random_name:"minecraft:bedrock_floor",true_at_and_below:{above_bottom:0},type:"minecraft:vertical_gradient"},then_run:{result_state:{Name:"minecraft:bedrock"},type:"minecraft:block"},type:"minecraft:condition"},{if_true:{biome_is:["the_silence:pesadilla_bioma"],type:"minecraft:biome"},then_run:{if_true:{type:"minecraft:above_preliminary_surface"},then_run:{sequence:[{if_true:{add_surface_depth:0b,offset:0,secondary_depth_range:0,surface_type:"floor",type:"minecraft:stone_depth"},then_run:{sequence:[{if_true:{add_stone_depth:0b,offset:-1,surface_depth_multiplier:0,type:"minecraft:water"},then_run:{result_state:{Name:"the_silence:sad_satan",Properties:{facing:"north"}},type:"minecraft:block"},type:"minecraft:condition"},{result_state:{Name:"the_silence:sad_satan",Properties:{facing:"north"}},type:"minecraft:block"}],type:"minecraft:sequence"},type:"minecraft:condition"},{if_true:{add_surface_depth:1b,offset:0,secondary_depth_range:0,surface_type:"floor",type:"minecraft:stone_depth"},then_run:{result_state:{Name:"the_silence:sad_satan",Properties:{facing:"north"}},type:"minecraft:block"},type:"minecraft:condition"}],type:"minecraft:sequence"},type:"minecraft:condition"},type:"minecraft:condition"}],type:"minecraft:sequence"}},type:"minecraft:noise"},type:"the_silence:pesadilla_dimension"},"the_silence:prueba_bolsillo":{generator:{biome_source:{biomes:[{biome:"the_silence:pesadilla_bioma",parameters:{continentalness:0.0f,depth:0.0f,erosion:0.0f,humidity:0.0f,offset:0.0f,temperature:0.0f,weirdness:0.0f}}],type:"minecraft:multi_noise"},settings:{aquifers_enabled:1b,default_block:{Name:"the_silence:sad_satan",Properties:{facing:"north"}},default_fluid:{Name:"minecraft:void_air"},disable_mob_generation:0b,legacy_random_source:0b,noise:{height:384,min_y:-64,size_horizontal:1,size_vertical:2},noise_router:{barrier:{noise:"minecraft:aquifer_barrier",type:"minecraft:noise",xz_scale:1.0d,y_scale:0.5d},continents:"minecraft:overworld/continents",depth:"minecraft:overworld/depth",erosion:"minecraft:overworld/erosion",final_density:{argument1:{argument:{argument1:0.64d,argument2:{argument:{argument:{argument1:0.1171875d,argument2:{argument1:{from_value:0.0d,from_y:-64,to_value:1.0d,to_y:-40,type:"minecraft:y_clamped_gradient"},argument2:{argument1:-0.1171875d,argument2:{argument1:-0.078125d,argument2:{argument1:{from_value:1.0d,from_y:240,to_value:0.0d,to_y:256,type:"minecraft:y_clamped_gradient"},argument2:{argument1:0.078125d,argument2:{input:"minecraft:overworld/sloped_cheese",max_exclusive:1.5625d,min_inclusive:-1000000.0d,type:"minecraft:range_choice",when_in_range:{argument1:"minecraft:overworld/sloped_cheese",argument2:{argument1:5.0d,argument2:"minecraft:overworld/caves/entrances",type:"minecraft:mul"},type:"minecraft:min"},when_out_of_range:{argument1:{argument1:{argument1:{argument1:{argument1:4.0d,argument2:{argument:{noise:"minecraft:cave_layer",type:"minecraft:noise",xz_scale:1.0d,y_scale:8.0d},type:"minecraft:square"},type:"minecraft:mul"},argument2:{argument1:{input:{argument1:0.27d,argument2:{noise:"minecraft:cave_cheese",type:"minecraft:noise",xz_scale:1.0d,y_scale:0.6666666666666666d},type:"minecraft:add"},max:1.0d,min:-1.0d,type:"minecraft:clamp"},argument2:{input:{argument1:1.5d,argument2:{argument1:-0.64d,argument2:"minecraft:overworld/sloped_cheese",type:"minecraft:mul"},type:"minecraft:add"},max:0.5d,min:0.0d,type:"minecraft:clamp"},type:"minecraft:add"},type:"minecraft:add"},argument2:"minecraft:overworld/caves/entrances",type:"minecraft:min"},argument2:{argument1:"minecraft:overworld/caves/spaghetti_2d",argument2:"minecraft:overworld/caves/spaghetti_roughness_function",type:"minecraft:add"},type:"minecraft:min"},argument2:{input:"minecraft:overworld/caves/pillars",max_exclusive:0.03d,min_inclusive:-1000000.0d,type:"minecraft:range_choice",when_in_range:-1000000.0d,when_out_of_range:"minecraft:overworld/caves/pillars"},type:"minecraft:max"}},type:"minecraft:add"},type:"minecraft:mul"},type:"minecraft:add"},type:"minecraft:add"},type:"minecraft:mul"},type:"minecraft:add"},type:"minecraft:blend_density"},type:"minecraft:interpolated"},type:"minecraft:mul"},type:"minecraft:squeeze"},argument2:"minecraft:overworld/caves/noodle",type:"minecraft:min"},fluid_level_floodedness:{noise:"minecraft:aquifer_fluid_level_floodedness",type:"minecraft:noise",xz_scale:1.0d,y_scale:0.67d},fluid_level_spread:{noise:"minecraft:aquifer_fluid_level_spread",type:"minecraft:noise",xz_scale:1.0d,y_scale:0.7142857142857143d},initial_density_without_jaggedness:{argument1:0.1171875d,argument2:{argument1:{from_value:0.0d,from_y:-64,to_value:1.0d,to_y:-40,type:"minecraft:y_clamped_gradient"},argument2:{argument1:-0.1171875d,argument2:{argument1:-0.078125d,argument2:{argument1:{from_value:1.0d,from_y:240,to_value:0.0d,to_y:256,type:"minecraft:y_clamped_gradient"},argument2:{argument1:0.078125d,argument2:{input:{argument1:-0.703125d,argument2:{argument1:4.0d,argument2:{argument:{argument1:"minecraft:overworld/depth",argument2:{argument:"minecraft:overworld/factor",type:"minecraft:cache_2d"},type:"minecraft:mul"},type:"minecraft:quarter_negative"},type:"minecraft:mul"},type:"minecraft:add"},max:64.0d,min:-64.0d,type:"minecraft:clamp"},type:"minecraft:add"},type:"minecraft:mul"},type:"minecraft:add"},type:"minecraft:add"},type:"minecraft:mul"},type:"minecraft:add"},lava:{noise:"minecraft:aquifer_lava",type:"minecraft:noise",xz_scale:1.0d,y_scale:1.0d},ridges:"minecraft:overworld/ridges",temperature:{noise:"minecraft:temperature",shift_x:"minecraft:shift_x",shift_y:0.0d,shift_z:"minecraft:shift_z",type:"minecraft:shifted_noise",xz_scale:0.25d,y_scale:0.0d},vegetation:{noise:"minecraft:vegetation",shift_x:"minecraft:shift_x",shift_y:0.0d,shift_z:"minecraft:shift_z",type:"minecraft:shifted_noise",xz_scale:0.25d,y_scale:0.0d},vein_gap:{noise:"minecraft:ore_gap",type:"minecraft:noise",xz_scale:1.0d,y_scale:1.0d},vein_ridged:{argument1:-0.07999999821186066d,argument2:{argument1:{argument:{argument:{input:"minecraft:y",max_exclusive:51.0d,min_inclusive:-60.0d,type:"minecraft:range_choice",when_in_range:{noise:"minecraft:ore_vein_a",type:"minecraft:noise",xz_scale:4.0d,y_scale:4.0d},when_out_of_range:0.0d},type:"minecraft:interpolated"},type:"minecraft:abs"},argument2:{argument:{argument:{input:"minecraft:y",max_exclusive:51.0d,min_inclusive:-60.0d,type:"minecraft:range_choice",when_in_range:{noise:"minecraft:ore_vein_b",type:"minecraft:noise",xz_scale:4.0d,y_scale:4.0d},when_out_of_range:0.0d},type:"minecraft:interpolated"},type:"minecraft:abs"},type:"minecraft:max"},type:"minecraft:add"},vein_toggle:{argument:{input:"minecraft:y",max_exclusive:51.0d,min_inclusive:-60.0d,type:"minecraft:range_choice",when_in_range:{noise:"minecraft:ore_veininess",type:"minecraft:noise",xz_scale:1.5d,y_scale:1.5d},when_out_of_range:0.0d},type:"minecraft:interpolated"}},ore_veins_enabled:1b,sea_level:63,spawn_target:[],surface_rule:{sequence:[{if_true:{false_at_and_above:{above_bottom:5},random_name:"minecraft:bedrock_floor",true_at_and_below:{above_bottom:0},type:"minecraft:vertical_gradient"},then_run:{result_state:{Name:"minecraft:bedrock"},type:"minecraft:block"},type:"minecraft:condition"},{if_true:{biome_is:["the_silence:pesadilla_bioma"],type:"minecraft:biome"},then_run:{if_true:{type:"minecraft:above_preliminary_surface"},then_run:{sequence:[{if_true:{add_surface_depth:0b,offset:0,secondary_depth_range:0,surface_type:"floor",type:"minecraft:stone_depth"},then_run:{sequence:[{if_true:{add_stone_depth:0b,offset:-1,surface_depth_multiplier:0,type:"minecraft:water"},then_run:{result_state:{Name:"the_silence:sad_satan",Properties:{facing:"north"}},type:"minecraft:block"},type:"minecraft:condition"},{result_state:{Name:"the_silence:sad_satan",Properties:{facing:"north"}},type:"minecraft:block"}],type:"minecraft:sequence"},type:"minecraft:condition"},{if_true:{add_surface_depth:1b,offset:0,secondary_depth_range:0,surface_type:"floor",type:"minecraft:stone_depth"},then_run:{result_state:{Name:"the_silence:sad_satan",Properties:{facing:"north"}},type:"minecraft:block"},type:"minecraft:condition"}],type:"minecraft:sequence"},type:"minecraft:condition"},type:"minecraft:condition"}],type:"minecraft:sequence"}},type:"minecraft:noise"},type:"the_silence:prueba_bolsillo"}}
+2024-12-08 21:36:46,067 [32mINFO [m [m[main][m [mn.m.w.i.c.RecipeManager.m_5787_(97)[m: Loaded 7 recipes
+2024-12-08 21:36:46,613 [1;31mERROR[m [m[main][m [mn.m.s.ServerFunctionLibrary.m_179951_(102)[m: Failed to load function watching:check
 java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command, see below for error at position 0: <--[HERE]
 	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
 	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
@@ -25,378 +259,204 @@ java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Wh
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
 Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command, see below for error at position 0: <--[HERE]
-	at net.minecraft.commands.CommandFunction.m_77984_(CommandFunction.java:63) ~[server-1.19.2-20220805.130853-srg.jar%23171!/:?]
-	at net.minecraft.server.ServerFunctionLibrary.m_214320_(ServerFunctionLibrary.java:85) ~[server-1.19.2-20220805.130853-srg.jar%23171!/:?]
+	at net.minecraft.commands.CommandFunction.m_77984_(CommandFunction.java:63) ~[server-1.19.2-20220805.130853-srg.jar%23169!/:?]
+	at net.minecraft.server.ServerFunctionLibrary.m_214320_(ServerFunctionLibrary.java:85) ~[server-1.19.2-20220805.130853-srg.jar%23169!/:?]
 	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
 	... 6 more
-2024-12-08 21:25:04,624 [1;31mERROR[m [m[main][m [mn.m.s.ServerAdvancementManager.m_136037_(55)[m: Parsing error loading custom advancement man:thetear: Non [a-z0-9/._-] character in path of location: man:tearoftheman
+2024-12-08 21:36:46,847 [1;31mERROR[m [m[main][m [mn.m.s.ServerAdvancementManager.m_136037_(55)[m: Parsing error loading custom advancement man:thetear: Non [a-z0-9/._-] character in path of location: man:tearoftheman
 
-2024-12-08 21:25:04,682 [32mINFO [m [m[main][m [mn.m.a.AdvancementList.m_139333_(94)[m: Loaded 1290 advancements
-2024-12-08 21:25:05,484 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(128)[m: Starting minecraft server version 1.19.2
-2024-12-08 21:25:05,485 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(133)[m: Loading properties
-2024-12-08 21:25:05,486 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(149)[m: Default game type: SURVIVAL
-2024-12-08 21:25:05,487 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129793_(1298)[m: Generating keypair
-2024-12-08 21:25:05,970 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(160)[m: Starting Minecraft server on *:25565
-2024-12-08 21:25:06,005 [32mINFO [m [m[Server thread][m [mn.m.s.n.ServerConnectionListener.m_9711_(83)[m: Using default channel type
-2024-12-08 21:25:06,166 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(172)[m: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-2024-12-08 21:25:06,167 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(173)[m: The server will make no attempt to authenticate usernames. Beware.
-2024-12-08 21:25:06,168 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(174)[m: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-2024-12-08 21:25:06,169 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(175)[m: To change this, set "online-mode" to "true" in the server.properties file.
-2024-12-08 21:25:06,400 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: This server is running Mohist version 1.19.2-141 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT, Forge version 43.4.2)
-2024-12-08 21:25:07,119 [32mINFO [m [m[Server thread][m [m.playerSample(271)[m: Server Ping Player Sample Count: 12
-2024-12-08 21:25:07,134 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: Using 4 threads for Netty based IO
-2024-12-08 21:25:07,138 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: Debug logging is enabled
-2024-12-08 21:25:07,223 [32mINFO [m [m[Thread-0][m [md.c.p.PaleHound.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,229 [32mINFO [m [m[Thread-0][m [md.c.p.PaleHound.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,242 [32mINFO [m [m[Thread-0][m [md.c.s.SkinwalkerOverhaul.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,247 [32mINFO [m [m[Thread-0][m [md.c.s.SkinwalkerOverhaul.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,254 [32mINFO [m [m[Thread-0][m [md.c.k.KimDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,263 [32mINFO [m [m[Thread-0][m [md.c.k.KimDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,271 [32mINFO [m [m[Thread-0][m [md.c.i.Irritator.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,273 [32mINFO [m [m[Thread-0][m [md.c.i.Irritator.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,275 [32mINFO [m [m[Thread-0][m [md.c.t.Torture.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,282 [32mINFO [m [m[Thread-0][m [md.c.t.Torture.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,286 [32mINFO [m [m[Thread-0][m [md.c.c.CartoonDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,287 [32mINFO [m [m[Thread-0][m [md.c.c.CartoonDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,295 [32mINFO [m [m[Thread-0][m [md.c.m.Mimicer.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,297 [32mINFO [m [m[Thread-0][m [md.c.m.Mimicer.reloadConfiguration(34)[m: Server configuration has been reloaded
-2024-12-08 21:25:07,358 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(198)[m: Preparing level "world"
-2024-12-08 21:25:21,624 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension minecraft:overworld
-2024-12-08 21:25:28,999 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,001 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,003 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,003 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,007 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,011 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,013 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,014 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,015 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,017 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,023 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,031 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,037 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,041 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,043 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,126 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:29,625 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:30,125 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:30,631 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:31,133 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 22%
-2024-12-08 21:25:31,718 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 76%
-2024-12-08 21:25:32,536 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 10911 ms
-2024-12-08 21:25:32,606 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension minecraft:the_end
-2024-12-08 21:25:36,544 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:36,546 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:36,547 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:36,548 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:36,549 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:36,550 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:36,550 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:36,551 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:36,609 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:37,109 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:37,609 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:38,109 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:38,430 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 5822 ms
-2024-12-08 21:25:38,437 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension man:halucination
-2024-12-08 21:25:39,952 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:39,962 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:39,964 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:39,965 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:40,606 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:40,948 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:41,445 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:41,941 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:42,442 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:43,242 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:43,446 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:44,133 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:44,500 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:45,019 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:45,440 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:45,955 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:46,456 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:47,002 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:47,450 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:47,945 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:48,445 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:48,980 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:49,443 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:49,942 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:50,447 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:50,977 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:51,440 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:51,944 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:52,440 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:52,945 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:53,471 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:54,005 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:54,448 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:54,945 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:55,477 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:55,940 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:56,440 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:56,996 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:57,445 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:57,942 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:58,481 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:58,942 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:59,482 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:25:59,959 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:00,472 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:00,974 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:01,480 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:01,973 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:02,447 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:02,949 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:03,450 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:03,943 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:04,469 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:04,978 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:05,463 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:05,941 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:06,485 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:06,962 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:07,458 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:07,968 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:08,440 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:08,940 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:09,462 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:09,981 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:10,466 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:10,949 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:11,444 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:11,964 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:12,478 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:12,943 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:13,474 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:13,948 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:14,464 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:14,950 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:15,445 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:15,944 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:16,476 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:16,962 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:17,444 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:17,961 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:18,476 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:19,031 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:19,474 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:19,958 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:20,474 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:20,982 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:21,462 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:21,960 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:22,475 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:22,979 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:23,460 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:23,940 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:24,441 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:24,939 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:25,445 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:25,953 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:26,469 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:26,951 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:27,446 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:27,979 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:28,447 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:29,086 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:29,466 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:29,943 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:30,451 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:30,982 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:31,475 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:31,976 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 42%
-2024-12-08 21:26:35,547 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 57109 ms
-2024-12-08 21:26:35,549 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension minecraft:the_nether
-2024-12-08 21:26:37,171 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:37,174 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:37,176 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:37,187 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:37,550 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:38,237 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 2687 ms
-2024-12-08 21:26:38,248 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension the_silence:pesadilla_dimension
-2024-12-08 21:26:39,944 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:39,945 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:39,959 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:39,961 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:40,260 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:40,851 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:41,250 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:41,783 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:42,252 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:42,782 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:43,254 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:43,789 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:44,260 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:44,760 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:45,261 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:45,760 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:46,294 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:46,756 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:47,252 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:47,753 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:48,296 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:48,753 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:49,261 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:49,754 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:50,261 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:50,778 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:51,269 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:51,766 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:52,253 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:52,758 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:53,258 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:53,773 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:54,254 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:54,750 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:55,289 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:55,771 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:56,311 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:56,756 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:57,289 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:57,757 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:58,266 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:58,774 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:59,252 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:26:59,784 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:00,286 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:00,771 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:01,278 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:01,763 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:02,287 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:02,787 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:03,286 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:03,769 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:04,298 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:04,768 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:05,252 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:05,760 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:06,285 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:06,773 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:07,328 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:07,777 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:08,259 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:08,754 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:09,251 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:09,783 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:10,260 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:10,803 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:11,267 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:11,756 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:12,260 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:12,750 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:13,253 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:13,768 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:14,263 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:14,799 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:15,269 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:15,759 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:16,258 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:16,777 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:17,271 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:17,782 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:18,262 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:18,798 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:19,250 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:19,763 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:20,281 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:20,752 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:21,322 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:21,751 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:22,276 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:22,826 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 44576 ms
-2024-12-08 21:27:22,830 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension the_silence:prueba_bolsillo
-2024-12-08 21:27:23,779 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:23,854 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:23,859 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:24,590 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:24,838 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:25,415 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:25,843 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:26,366 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:26,833 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:27,336 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:27,852 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:28,352 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:28,863 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:29,332 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:29,870 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:30,334 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:30,847 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:31,333 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:31,846 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:32,336 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:32,879 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:33,335 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:33,836 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:34,346 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:34,866 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:35,395 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:35,833 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:36,345 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:36,836 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:37,336 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:37,832 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:38,358 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:38,864 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:39,343 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:39,854 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:40,366 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:40,872 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:41,360 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:41,881 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:42,334 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:42,832 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:43,353 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:43,832 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:44,331 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:44,849 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:45,337 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:45,848 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:46,396 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:46,853 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:47,366 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:47,867 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:48,336 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:48,865 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:49,340 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:49,835 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:50,371 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:50,836 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:51,335 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:51,896 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:52,339 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:52,841 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:53,333 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:53,862 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:54,341 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:54,864 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:55,334 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:55,848 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:56,356 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:56,869 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:57,353 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:57,833 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:58,351 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:58,862 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:59,347 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:27:59,840 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:00,364 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:00,833 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:01,333 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:01,840 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:02,331 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:02,834 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:03,335 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:03,839 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:04,367 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:04,860 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:05,356 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
-2024-12-08 21:28:05,831 [32mINFO [m [m[Worker-Main-8][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 83%
-2024-12-08 21:28:05,958 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 43127 ms
-2024-12-08 21:28:06,017 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(202)[m: Done (178.834s)! For help, type "help"
-2024-12-08 21:28:06,074 [32mINFO [m [m[Server thread][m [mn.m.s.p.PermissionAPI.initializePermissionAPI(130)[m: Successfully initialized permission handler forge:default_handler
-2024-12-08 21:28:06,079 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_7041_(684)[m: Stopping server
-2024-12-08 21:28:06,083 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_7041_(696)[m: Saving players
-2024-12-08 21:28:06,186 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_7041_(702)[m: Saving worlds
+2024-12-08 21:36:46,905 [32mINFO [m [m[main][m [mn.m.a.AdvancementList.m_139333_(94)[m: Loaded 1290 advancements
+2024-12-08 21:36:47,637 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(128)[m: Starting minecraft server version 1.19.2
+2024-12-08 21:36:47,637 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(133)[m: Loading properties
+2024-12-08 21:36:47,638 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(149)[m: Default game type: SURVIVAL
+2024-12-08 21:36:47,638 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129793_(1298)[m: Generating keypair
+2024-12-08 21:36:47,800 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(160)[m: Starting Minecraft server on *:25565
+2024-12-08 21:36:47,837 [32mINFO [m [m[Server thread][m [mn.m.s.n.ServerConnectionListener.m_9711_(83)[m: Using default channel type
+2024-12-08 21:36:47,985 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(172)[m: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2024-12-08 21:36:47,986 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(173)[m: The server will make no attempt to authenticate usernames. Beware.
+2024-12-08 21:36:47,987 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(174)[m: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2024-12-08 21:36:47,987 [33mWARN [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(175)[m: To change this, set "online-mode" to "true" in the server.properties file.
+2024-12-08 21:36:48,168 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: This server is running Mohist version 1.19.2-141 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT, Forge version 43.4.2)
+2024-12-08 21:36:49,032 [32mINFO [m [m[Server thread][m [m.playerSample(271)[m: Server Ping Player Sample Count: 12
+2024-12-08 21:36:49,039 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: Using 4 threads for Netty based IO
+2024-12-08 21:36:49,041 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: Debug logging is enabled
+2024-12-08 21:36:49,089 [32mINFO [m [m[Thread-0][m [md.c.p.PaleHound.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,096 [32mINFO [m [m[Thread-0][m [md.c.s.SkinwalkerOverhaul.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,100 [32mINFO [m [m[Thread-0][m [md.c.k.KimDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,106 [32mINFO [m [m[Thread-0][m [md.c.k.KimDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,112 [32mINFO [m [m[Thread-0][m [md.c.c.CaveDweller.reloadConfiguration(36)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,117 [32mINFO [m [m[Thread-0][m [md.c.c.CaveDweller.reloadConfiguration(36)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,123 [32mINFO [m [m[Thread-0][m [md.c.t.Torture.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,127 [32mINFO [m [m[Thread-0][m [md.c.t.Torture.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,133 [32mINFO [m [m[Thread-0][m [md.c.c.CartoonDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,138 [32mINFO [m [m[Thread-0][m [md.c.c.CartoonDweller.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,143 [32mINFO [m [m[Thread-0][m [md.c.m.Mimicer.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,150 [32mINFO [m [m[Thread-0][m [md.c.m.Mimicer.reloadConfiguration(34)[m: Server configuration has been reloaded
+2024-12-08 21:36:49,198 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(198)[m: Preparing level "world"
+2024-12-08 21:37:05,302 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension minecraft:overworld
+2024-12-08 21:37:12,277 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,280 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,289 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,294 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,300 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,303 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,324 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,345 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,350 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,354 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,358 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,362 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,376 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,382 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,397 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:12,805 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:13,303 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:13,803 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:14,305 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:14,818 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 4%
+2024-12-08 21:37:15,368 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 55%
+2024-12-08 21:37:16,083 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 10780 ms
+2024-12-08 21:37:16,180 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension minecraft:the_nether
+2024-12-08 21:37:19,925 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:19,927 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:19,928 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:19,932 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:19,934 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:19,934 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:19,936 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:19,939 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:20,183 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:20,683 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:21,182 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:21,683 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 5502 ms
+2024-12-08 21:37:21,689 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension minecraft:the_end
+2024-12-08 21:37:25,132 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:25,133 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:25,134 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:25,135 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:25,137 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:25,138 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:25,139 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:25,191 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:25,691 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:26,192 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:26,691 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 18%
+2024-12-08 21:37:26,824 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 5134 ms
+2024-12-08 21:37:26,829 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_129940_(561)[m: Preparing start region for dimension man:halucination
+2024-12-08 21:37:28,275 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:28,291 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:28,292 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:28,502 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:28,865 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:29,374 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:29,859 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:30,345 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:30,837 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:31,350 [32mINFO [m [m[Worker-Main-1][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:31,833 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:32,476 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:32,879 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:33,381 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:33,832 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:34,370 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:34,859 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:35,350 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:35,852 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:36,392 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:36,838 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:37,340 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:37,886 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:38,332 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:38,835 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:39,409 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:39,840 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:40,358 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:40,848 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:41,343 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:41,832 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:42,369 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:42,831 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:43,348 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:43,834 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:44,357 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:44,859 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:45,342 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:45,905 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:46,332 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:46,869 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:47,375 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:47,832 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:48,361 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:48,876 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:49,349 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:49,833 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:50,347 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:50,879 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:51,375 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:51,941 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:52,351 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:52,832 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:53,348 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:53,855 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:54,334 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:54,855 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:55,335 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:55,852 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:56,331 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:56,835 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:57,360 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:57,833 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:58,353 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:58,834 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:59,364 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:37:59,839 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:00,363 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:00,843 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:01,418 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:01,854 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:02,333 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:02,837 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:03,332 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:03,861 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:04,435 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:04,842 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:05,363 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:05,852 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:06,337 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:06,831 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:07,342 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:07,875 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:08,333 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:08,838 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:09,358 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:09,835 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:10,371 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:10,853 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:11,352 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:11,840 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:12,341 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:12,866 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:13,369 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:13,874 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:14,342 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:14,840 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:15,360 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:15,850 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:16,356 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:16,838 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:17,358 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:17,860 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:18,368 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:18,851 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:19,333 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:19,860 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 0%
+2024-12-08 21:38:20,332 [32mINFO [m [m[Worker-Main-7][m [mn.m.s.l.p.LoggerChunkProgressListener.m_5511_(44)[m: Preparing spawn area: 73%
+2024-12-08 21:38:23,128 [32mINFO [m [m[Server thread][m [mn.m.s.l.p.LoggerChunkProgressListener.m_7646_(55)[m: Time elapsed: 56298 ms
+2024-12-08 21:38:23,153 [32mINFO [m [m[Server thread][m [mMinecraft.publish(36)[m: Server permissions file permissions.yml is empty, ignoring it
+2024-12-08 21:38:23,168 [32mINFO [m [m[Server thread][m [mn.m.s.d.DedicatedServer.m_7038_(202)[m: Done (94.097s)! For help, type "help"
+2024-12-08 21:38:23,195 [32mINFO [m [m[Server thread][m [mn.m.s.p.PermissionAPI.initializePermissionAPI(130)[m: Successfully initialized permission handler forge:default_handler
+2024-12-08 21:45:14,646 [32mINFO [m [m[User Authenticator #1][m [mn.m.s.n.ServerLoginPacketListenerImpl.fireEvents(378)[m: UUID of player UrielXD1123 is 1fa20113-834c-3deb-8400-816ba399a88d
+2024-12-08 21:45:15,057 [32mINFO [m [m[Server thread][m [mn.m.s.n.ServerLoginPacketListenerImpl.m_7026_(185)[m: com.mojang.authlib.GameProfile@ef84671[id=1fa20113-834c-3deb-8400-816ba399a88d,name=UrielXD1123,properties={},legacy=false] (/127.223.177.3:39971) lost connection: Disconnected
+2024-12-08 21:45:23,196 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_7041_(684)[m: Stopping server
+2024-12-08 21:45:23,198 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_7041_(696)[m: Saving players
+2024-12-08 21:45:23,298 [32mINFO [m [m[Server thread][m [mn.m.s.MinecraftServer.m_7041_(702)[m: Saving worlds
